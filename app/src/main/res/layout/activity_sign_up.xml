@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    tools:context=".SignUpActivity"
+    android:background="#343841"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/sign_up"
+        android:textColor="#2199E8"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/userNameET1"
+        android:layout_width="286dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="12dp"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableStart="@drawable/ic_baseline_assignment_ind_24"
+        android:drawableLeft="@drawable/ic_baseline_assignment_ind_24"
+        android:drawablePadding="5dp"
+        android:hint="Username"
+        android:padding="7dp"
+        android:textSize="21sp"
+        android:textColor="#415560"
+        android:textColorHint="#415560" />
+
+    <EditText
+        android:id="@+id/emailNameET"
+        android:layout_width="286dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="12dp"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="5dp"
+        android:hint="@string/email"
+        android:padding="7dp"
+        android:textSize="21sp"
+        android:textColor="#415560"
+        android:textColorHint="#415560" />
+
+
+    <EditText
+        android:id="@+id/passwordET1"
+        android:layout_width="286dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="12dp"
+        android:background="@drawable/rounded_edit_text"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawableLeft="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="5dp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="7dp"
+        android:textSize="21sp"
+        android:textColor="#415560"
+        android:textColorHint="#415560" />
+
+
+
+    <Button
+        android:id="@+id/signUp_btn"
+        android:layout_width="170dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/rounded_login_btn"
+        android:shadowColor="#00E5FF"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="@string/sign_up"
+        android:textColor="#2199E8"
+        android:textSize="30sp"
+        app:backgroundTint="@null" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/or_sign_in_with_social_platform"
+        android:textColor="#5F7987"
+        android:textSize="12sp" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <com.shaishavgandhi.loginbuttons.FacebookButton
+            android:id="@+id/facebook_btn_signUp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="8dp"
+            app:iconSize = "20dp"
+            app:roundedCorner = "true"
+            app:transparentBackground = "true"
+            app:roundedCornerRadius = "75dp"
+            />
+
+        <com.shaishavgandhi.loginbuttons.TwitterButton
+            android:id="@+id/twitter_btn_signUp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="8dp"
+            app:iconSize = "20dp"
+            app:roundedCorner = "true"
+            app:transparentBackground = "true"
+            app:roundedCornerRadius = "75dp"
+            />
+
+        <com.shaishavgandhi.loginbuttons.GoogleButton
+            android:id="@+id/google_btn_signUp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="8dp"
+            app:iconSize = "20dp"
+            app:roundedCorner = "true"
+            app:transparentBackground = "true"
+            app:roundedCornerRadius = "75dp"
+            />
+
+        <com.shaishavgandhi.loginbuttons.LinkedInButton
+            android:id="@+id/linkedIn_btn_signUp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="8dp"
+            app:iconSize = "20dp"
+            app:roundedCorner = "true"
+            app:transparentBackground = "true"
+            app:roundedCornerRadius = "75dp"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/already_have_an_account"
+            android:textSize="12sp"
+            android:textColor="#5F7987"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:id="@+id/signInIfHaveAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:textSize="12sp"
+            android:textColor="#2199E8"
+            android:layout_marginStart="3dp"
+            android:clickable="true"
+            android:layout_gravity="center_horizontal"
+            />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

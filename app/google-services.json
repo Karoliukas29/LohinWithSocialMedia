@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1095881653643",
+    "project_id": "loginwithsocialmedia-66a3d",
+    "storage_bucket": "loginwithsocialmedia-66a3d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1095881653643:android:4bc5e31b03f8dbe0adc38e",
+        "android_client_info": {
+          "package_name": "com.karolis.loginwithsocialmedia"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1095881653643-2vqk4u85v6hv3r0m4ftdc4fu2oj18usv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.karolis.loginwithsocialmedia",
+            "certificate_hash": "dbf38975bc2f3b1412c476f637edeca6ba36a6c2"
+          }
+        },
+        {
+          "client_id": "1095881653643-etvga7kqtk5nj5ovmv079ecf2d3dj22q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDaTvYba9H9L_jCSQBYZtan8ouA7-UxVkw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1095881653643-etvga7kqtk5nj5ovmv079ecf2d3dj22q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

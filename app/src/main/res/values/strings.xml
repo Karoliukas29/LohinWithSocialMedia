@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LoginWithSocialMedia</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="login">LOGIN</string>
+    <string name="or_sign_in_with_social_platform">Or Sign in with Social platform</string>
+    <string name="don_t_have_an_account">Do not have an account?</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="email">Email</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="facebook_app_id">2928492097479694</string>
+    <string name="fb_login_protocol_scheme">fb2928492097479694</string>
+
+</resources>
