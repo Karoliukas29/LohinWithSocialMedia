@@ -19,7 +19,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
-    private Button login_btn;
+    private Button login_btn, login_With_Facebook_btn;
     private EditText usernameET, passwordET;
     private TextView signUpIfNoAccount;
     public FirebaseAuth mAuth;
@@ -34,6 +34,15 @@ public class LoginActivity extends AppCompatActivity {
         login_btn = findViewById(R.id.login_btn);
         usernameET = findViewById(R.id.userNameET);
         passwordET = findViewById(R.id.passwordET);
+        login_With_Facebook_btn = findViewById(R.id.facebook_login_btn);
+
+        login_With_Facebook_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, LoginWithFacebook.class);
+                startActivity(intent);
+            }
+        });
         signUpIfNoAccount = findViewById(R.id.signUpIfNoAccount);
 
         signUpIfNoAccount.setOnClickListener(new View.OnClickListener() {

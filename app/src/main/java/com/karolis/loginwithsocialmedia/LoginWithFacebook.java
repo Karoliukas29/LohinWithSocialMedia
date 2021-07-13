@@ -1,5 +1,6 @@
 package com.karolis.loginwithsocialmedia;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Toast;
@@ -23,11 +24,9 @@ import java.util.Collections;
 
 import androidx.annotation.NonNull;
 
-public class SignUpWithFacebook extends SignUpActivity {
-
+public class LoginWithFacebook extends LoginActivity {
     private FirebaseAuth mAuth;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
-
     CallbackManager callbackManager;
 
     @Override
@@ -44,7 +43,6 @@ public class SignUpWithFacebook extends SignUpActivity {
                     @Override
                     public void onSuccess(LoginResult loginResult) {
                         handleFacebookAccessToken(loginResult.getAccessToken());
-
 
 
                     }
@@ -76,19 +74,20 @@ public class SignUpWithFacebook extends SignUpActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
-                            FirebaseUser User = mAuth.getCurrentUser();
-                            updateUI(User);
+                            FirebaseUser user = mAuth.getCurrentUser();
+                            updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
-                            Toast.makeText(SignUpWithFacebook.this, "Login Failed " + task.getException(), Toast.LENGTH_SHORT);
+                            Toast.makeText(LoginWithFacebook.this, "Login Failed " + task.getException(), Toast.LENGTH_SHORT);
+                            updateUI(null);
                         }
                     }
                 });
     }
 
     private void updateUI(FirebaseUser user) {
-        Intent intent = new Intent(SignUpWithFacebook.this, MainActivity.class);
+        Intent intent = new Intent(LoginWithFacebook.this, MainActivity.class);
         startActivity(intent);
     }
+}
 
-    }

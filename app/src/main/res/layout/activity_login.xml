@@ -106,7 +106,7 @@
 
 
         <com.shaishavgandhi.loginbuttons.FacebookButton
-            android:id="@+id/facebook_btn"
+            android:id="@+id/facebook_login_btn"
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:layout_margin="8dp"
