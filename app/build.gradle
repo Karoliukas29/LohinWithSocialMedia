@@ -34,6 +34,8 @@ dependencies {
     implementation platform('com.google.firebase:firebase-bom:28.2.0')
     implementation 'com.facebook.android:facebook-login:4.30.0'
     implementation 'com.facebook.android:facebook-android-sdk:[8,9)'
+    implementation platform('com.google.firebase:firebase-bom:28.2.1')
+    implementation 'com.google.android.gms:play-services-auth:19.0.0'
     implementation 'com.google.firebase:firebase-analytics'
     implementation 'com.shaishavgandhi:login-buttons:1.0.0'
     implementation 'androidx.appcompat:appcompat:1.3.0'

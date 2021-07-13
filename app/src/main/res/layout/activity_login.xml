@@ -128,7 +128,7 @@
             />
 
         <com.shaishavgandhi.loginbuttons.GoogleButton
-            android:id="@+id/google_btn"
+            android:id="@+id/google_login_btn"
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:layout_margin="8dp"
