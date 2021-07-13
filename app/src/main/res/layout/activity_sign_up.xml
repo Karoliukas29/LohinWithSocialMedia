@@ -144,16 +144,7 @@
             app:roundedCornerRadius = "75dp"
             />
 
-        <com.shaishavgandhi.loginbuttons.LinkedInButton
-            android:id="@+id/linkedIn_btn_signUp"
-            android:layout_width="55dp"
-            android:layout_height="55dp"
-            android:layout_margin="8dp"
-            app:iconSize = "20dp"
-            app:roundedCorner = "true"
-            app:transparentBackground = "true"
-            app:roundedCornerRadius = "75dp"
-            />
+
 
 
     </LinearLayout>

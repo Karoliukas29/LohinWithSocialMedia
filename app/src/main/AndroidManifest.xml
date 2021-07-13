@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.LoginWithSocialMedia">
-        <activity android:name=".LoginWithGoogle"></activity>
+        <activity android:name=".LoginWithTwitter"></activity>
+        <activity android:name=".LoginWithGoogle" />
         <activity android:name=".SignUpWithFacebook" />
         <activity android:name=".SignUpActivity" />
         <activity android:name=".MainActivity" />
