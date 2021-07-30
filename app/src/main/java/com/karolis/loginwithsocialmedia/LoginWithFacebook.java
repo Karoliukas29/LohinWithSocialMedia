@@ -3,6 +3,7 @@ package com.karolis.loginwithsocialmedia;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.facebook.AccessToken;
@@ -18,7 +19,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.Collections;
 
@@ -26,7 +26,6 @@ import androidx.annotation.NonNull;
 
 public class LoginWithFacebook extends LoginActivity {
     private FirebaseAuth mAuth;
-    private FirebaseFirestore db = FirebaseFirestore.getInstance();
     CallbackManager callbackManager;
 
     @Override
@@ -75,6 +74,9 @@ public class LoginWithFacebook extends LoginActivity {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
                             FirebaseUser user = mAuth.getCurrentUser();
+                            Log.i("TAG", "onComplete: login completed with user: "
+                                    + user.getDisplayName() + ", " + user.getPhotoUrl() + ", " + user.getEmail());
+
                             updateUI(user);
                         } else {
                             // If sign in fails, display a message to the user.
